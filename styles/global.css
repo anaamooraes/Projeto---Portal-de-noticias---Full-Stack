@@ -11,9 +11,31 @@
   --stroke-color: #1e293b;
   --text-color-primary: #f1f5f9;
   --text-color-secondery: #CBD5E1;
+
+  --font-famili: "Archivo", sans-serif;
+  --h1: 800 24px/135% var(--font-famili);
+  --h2: 800 16PX/140% var(--font-famili);
+  --h3: 800 14px/140% var(--font-famili);
+  --text-span: 600 14px/145% var(--font-famili);
+  --text: 400 16px/140% var(--font-famili);
+  --text-sm: 400 14px/160% var(--font-famili);
 }
 
 body {
+  font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
+h1, h2, h3 {
+  font: inherit;
 }
